@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Amila\\LaravelCms\\Plugins": "src/"
+            "Amila\\LaravelCms\\Plugins\\": "src/"
         }
     },
     "minimum-stability": "dev"
