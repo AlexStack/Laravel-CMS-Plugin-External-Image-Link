@@ -28,7 +28,7 @@ class UpdatePluginSettingsTable extends Migration
             'abstract'        => 'Save external images to your server and add <span style="color: rgb(99, 74, 165);">rel=nofollow</span> to the external links. <a href="https://www.laravelcms.tech" target="_blank"><i class="fas fa-link mr-1"></i>Tutorial</a>',
             'param_value'     => '{
 "plugin_name" : "External Images & Links",
-"blade_file" : "remote-image",
+"blade_file" : "external-image-link",
 "tab_name" : "",
 "php_class"  : "Amila\\\\LaravelCms\\\\Plugins\\\\ExternalImageLink\\\\Controllers\\\\ExternalImageLinkController",
 "version": "0.1.1",
