@@ -1,7 +1,5 @@
 <?php
 
-//namespace AlexStack\LaravelCmsExternalImageLink\Http\Controllers;
-
 namespace Amila\LaravelCms\Plugins\ExternalImageLink\Controllers;
 
 use AlexStack\LaravelCms\Helpers\LaravelCmsHelper;
