@@ -30,7 +30,7 @@
         }
     },
     "scripts": {
-        "post-autoload-dump": [
+        "post-package-install": [
             "php artisan migrate --path=./vendor/alexstack/laravel-cms-plugin-external-image-link/src/database/migrations/",
             "php artisan vendor:publish --provider=Amila\\LaravelCms\\Plugins\\ExternalImageLink\\LaravelCmsPluginServiceProvider",
             "php artisan laravelcms --action=clear"
