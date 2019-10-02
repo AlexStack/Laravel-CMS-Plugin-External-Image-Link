@@ -13,7 +13,8 @@
         "homepage": "https://github.com/AlexStack/Laravel-CMS-Plugin-External-Image-Link"
     }],
     "require": {
-        "alexstack/laravel-cms": "^1.1"
+        "php": ">=7.0.0",
+        "alexstack/laravel-cms": "^1.1 || dev-*"
     },
     "autoload": {
         "psr-4": {
@@ -30,9 +31,9 @@
     },
     "scripts": {
         "post-autoload-dump": [
-            "@php artisan migrate --path=./vendor/alexstack/laravel-cms-plugin-external-image-link/src/database/migrations/",
-            "@php artisan vendor:publish --provider=Amila\\LaravelCms\\Plugins\\ExternalImageLink\\LaravelCmsPluginServiceProvider",
-            "@php artisan laravelcms --action=clear"
+            "php artisan migrate --path=./vendor/alexstack/laravel-cms-plugin-external-image-link/src/database/migrations/",
+            "php artisan vendor:publish --provider=Amila\\LaravelCms\\Plugins\\ExternalImageLink\\LaravelCmsPluginServiceProvider",
+            "php artisan laravelcms --action=clear"
         ]
     }
 }
