@@ -23,7 +23,7 @@ class UpdatePluginSettingsTable extends Migration
             'category'        => 'plugin',
             'param_name'      => 'page-tab-external-image-link',
             'input_attribute' => '{"rows":15,"required":"required"}',
-            'enabled'         => 0,
+            'enabled'         => 1,
             'sort_value'      => 55,
             'abstract'        => 'Save external images to your server and add <span style="color: rgb(99, 74, 165);">rel=nofollow</span> to the external links. <a href="https://www.laravelcms.tech" target="_blank"><i class="fas fa-link mr-1"></i>Tutorial</a>',
             'param_value'     => '{
