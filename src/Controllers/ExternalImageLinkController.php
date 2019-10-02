@@ -122,7 +122,7 @@ class ExternalImageLinkController extends Controller
 
         $img_array = [];
 
-        preg_match_all("/(src|SRC)=[\"|'| ]{0,}(http(s?):\/\/(.*).(gif|jpg|jpeg|bmp|png|svg))/isU", $content, $img_array);
+        preg_match_all("/(src|SRC)=[\"|'| ]{0,}(http(s?):\/\/(.*).(gif|jpg|jpeg|bmp|png|svg|webp))/isU", $content, $img_array);
         // all unique images
         $img_array = array_unique($img_array[2]);
 
