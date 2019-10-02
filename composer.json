@@ -20,5 +20,12 @@
             "Amila\\LaravelCms\\Plugins\\ExternalImageLink\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amila\\LaravelCms\\Plugins\\ExternalImageLink\\LaravelCmsPluginServiceProvider"
+            ]
+        }
+    }
 }

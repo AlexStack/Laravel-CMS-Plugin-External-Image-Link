@@ -4,7 +4,7 @@ namespace Amila\LaravelCms\Plugins\ExternalImageLink;
 
 use Illuminate\Support\ServiceProvider;
 
-class ExternalImageLinkServiceProvider extends ServiceProvider
+class LaravelCmsPluginServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
