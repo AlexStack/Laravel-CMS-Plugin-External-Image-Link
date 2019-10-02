@@ -27,5 +27,11 @@
                 "Amila\\LaravelCms\\Plugins\\ExternalImageLink\\LaravelCmsPluginServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php artisan migrate --path=./vendor/alexstack/laravel-cms-plugin-external-image-link/src/database/migrations/",
+            "@php artisan vendor:publish --provider=Amila\\LaravelCms\\Plugins\\ExternalImageLink\\LaravelCmsPluginServiceProvider"
+        ]
     }
 }
