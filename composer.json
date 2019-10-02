@@ -14,7 +14,7 @@
     }],
     "require": {
         "php": ">=7.0.0",
-        "alexstack/laravel-cms": "^1.1 || dev-*"
+        "alexstack/laravel-cms": "*"
     },
     "autoload": {
         "psr-4": {
