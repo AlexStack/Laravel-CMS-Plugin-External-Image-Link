@@ -1,17 +1,27 @@
 {
     "name": "alexstack/laravel-cms-plugin-external-image-link",
-    "description": "Convert remote image to local image for Amila Laravel CMS",
+    "description": "Save all remote images in the page contents editor to your server, replace the image URL from remote URL to your local URL. Add rel=nofollow & target=_blank to external links for better SEO and user experience.",
     "type": "amila-laravel-cms-plugin",
     "homepage": "https://github.com/AlexStack/Laravel-CMS-Plugin-External-Image-Link",
-    "keywords": ["laravel", "amila laravel cms", "remote image", "local image", "nofollow", "noindex", "amila laravel cms plugin"],
+    "keywords": [
+        "laravel",
+        "amila laravel cms",
+        "remote image",
+        "local image",
+        "nofollow",
+        "noindex",
+        "amila laravel cms plugin"
+    ],
     "license": "MIT",
     "support": {
         "issues": "https://github.com/AlexStack/Laravel-CMS-Plugin-External-Image-Link/issues"
     },
-    "authors": [{
-        "name": "Alex",
-        "homepage": "https://github.com/AlexStack/Laravel-CMS-Plugin-External-Image-Link"
-    }],
+    "authors": [
+        {
+            "name": "Alex",
+            "homepage": "https://github.com/AlexStack/Laravel-CMS-Plugin-External-Image-Link"
+        }
+    ],
     "require": {
         "php": ">=7.0.0",
         "alexstack/laravel-cms": "*"
