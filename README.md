@@ -1,6 +1,50 @@
 # Save external images to your server and add rel=nofollow to the external links
 
 -   This is an Amila Laravel CMS Plugin
+-   Save all remote images in the page contents editor to your server, replace the image URL from remote URL to your local URL. Add rel=nofollow & target=\_blank to external links for better SEO and user experience.
+
+## Install it via the backend
+
+-   Go to the CMS settings page -> Plugin -> search for remote image
+-   Find alexstack/laravel-cms-plugin-external-image-link
+-   Click the Install button
+
+## What the plugin do for us?
+
+-   Save the remote images in the content editors to your server (eg. Main Content, Sub Content, Extra Content ...)
+-   Automatically convert the remote image URLs to the local relative URLs. eg.
+
+```html
+<img
+    src="https://github.githubassets.com/images/modules/marketplace/marketplace-illustration-01.svg"
+    class="..."
+/>
+
+will automatically convert to below for you:
+
+<img
+    src="/laravel-cms/uploads/fb/9a3f5ebfa6aec1a597094ad6d3116edc09e2e2fb.svg"
+    class="..."
+/>
+```
+
+-   Automatically add rel="nofollow" & target="\_blank" to external links for better SEO and user experience. eg.
+
+```html
+<a href="https://github.com/AlexStack/Laravel-CMS" class="text-info"
+    >Laravel CMS</a
+>
+
+will automatically convert to below for you:
+
+<a
+    href="https://github.com/AlexStack/Laravel-CMS"
+    class="text-info"
+    target="_blank"
+    rel="nofollow noopener external noindex"
+    >Laravel CMS</a
+>
+```
 
 ## Install it via command line manually
 
@@ -28,9 +72,8 @@ php artisan laravelcms --action=clear
 {
     "plugin_name": "External Images & Links",
     "blade_file": "remote-image",
-    "tab_name": "aac",
+    "tab_name": "",
     "php_class": "Amila\\LaravelCms\\Plugins\\ExternalImageLink\\Controllers\\ExternalImageLinkController",
-    "version": "0.1.1",
     "remote_image_to_local": {
         "enable": true,
         "exclude": [".laravelcms.tech", "localhost/", ".test", ".local"],

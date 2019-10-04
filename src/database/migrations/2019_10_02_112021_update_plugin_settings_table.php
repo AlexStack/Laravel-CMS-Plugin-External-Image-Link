@@ -31,7 +31,7 @@ class UpdatePluginSettingsTable extends Migration
 "blade_file" : "external-image-link",
 "tab_name" : "",
 "php_class"  : "Amila\\\\LaravelCms\\\\Plugins\\\\ExternalImageLink\\\\Controllers\\\\ExternalImageLinkController",
-"version": "0.1.1",
+"version": "0.2.0",
 "remote_image_to_local" : {
   	"enable": true,
     "exclude":[".laravelcms.tech","localhost/",".test", ".local"],
