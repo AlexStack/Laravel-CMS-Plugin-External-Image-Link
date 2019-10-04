@@ -11,39 +11,26 @@
 
 ## What the plugin do for us?
 
--   Save the remote images in the content editors to your server (eg. Main Content, Sub Content, Extra Content ...)
+-   Save the remote images in the content editors to your server (eg. Main Content, Sub Content, Extra Content ...). You will be able to find them on the File Manager page afterward.
 -   Automatically convert the remote image URLs to the local relative URLs. eg.
 
-```html
-<img
-    src="https://github.githubassets.com/images/modules/marketplace/marketplace-illustration-01.svg"
-    class="..."
-/>
+```php
+<img src="https://github.githubassets.com/images/modules/marketplace/marketplace-illustration-01.svg" class="..." >
 
 will automatically convert to below for you:
 
-<img
-    src="/laravel-cms/uploads/fb/9a3f5ebfa6aec1a597094ad6d3116edc09e2e2fb.svg"
-    class="..."
-/>
+<img src="/laravel-cms/uploads/fb/9a3f5ebfa6aec1a597094ad6d3116edc09e2e2fb.svg" class="..." >
 ```
 
 -   Automatically add rel="nofollow" & target="\_blank" to external links for better SEO and user experience. eg.
 
-```html
-<a href="https://github.com/AlexStack/Laravel-CMS" class="text-info"
-    >Laravel CMS</a
->
+```php
+<a href="https://github.com/AlexStack/Laravel-CMS" class="text-info">Laravel CMS</a>
 
 will automatically convert to below for you:
 
-<a
-    href="https://github.com/AlexStack/Laravel-CMS"
-    class="text-info"
-    target="_blank"
-    rel="nofollow noopener external noindex"
-    >Laravel CMS</a
->
+<a href="https://github.com/AlexStack/Laravel-CMS" class="text-info" target="_blank" rel="nofollow noopener external noindex">Laravel CMS</a>
+
 ```
 
 ## Install it via command line manually
